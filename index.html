@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centro de Salud Mental Comunitario</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <h1>CSMC Renacer</h1>
+        <a class="btn-outline" href="#contacto">Solicitar cita</a>
+      </nav>
+      <div class="hero-content container">
+        <p class="eyebrow">Atención cercana, humana y accesible</p>
+        <h2>Centro de Salud Mental Comunitario</h2>
+        <p>
+          Acompañamos a personas, familias y comunidades con servicios de
+          prevención, orientación, terapia y rehabilitación psicosocial.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#servicios">Ver servicios</a>
+          <a class="btn-secondary" href="#emergencia">Línea de emergencia</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="sobre" class="section container">
+        <h3>¿Quiénes somos?</h3>
+        <p>
+          Somos un equipo interdisciplinario de psicología, psiquiatría,
+          trabajo social y enfermería comunitaria. Nuestro enfoque promueve el
+          bienestar emocional con respeto a la diversidad cultural, de género y
+          de ciclo de vida.
+        </p>
+      </section>
+
+      <section id="servicios" class="section alt">
+        <div class="container">
+          <h3>Servicios principales</h3>
+          <div class="cards">
+            <article class="card">
+              <h4>Evaluación y diagnóstico</h4>
+              <p>
+                Entrevistas clínicas iniciales y planes de atención
+                personalizados.
+              </p>
+            </article>
+            <article class="card">
+              <h4>Psicoterapia individual y familiar</h4>
+              <p>
+                Intervenciones breves y de mediano plazo para diferentes edades.
+              </p>
+            </article>
+            <article class="card">
+              <h4>Talleres comunitarios</h4>
+              <p>
+                Actividades sobre manejo de estrés, crianza positiva y redes de
+                apoyo.
+              </p>
+            </article>
+            <article class="card">
+              <h4>Atención de crisis</h4>
+              <p>
+                Contención emocional y derivación segura en situaciones
+                urgentes.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="horarios" class="section container">
+        <h3>Horarios de atención</h3>
+        <ul>
+          <li><strong>Lunes a viernes:</strong> 8:00 a.m. – 6:00 p.m.</li>
+          <li><strong>Sábados:</strong> 8:00 a.m. – 1:00 p.m.</li>
+          <li><strong>Atención grupal:</strong> Martes y jueves, 4:00 p.m.</li>
+        </ul>
+      </section>
+
+      <section id="emergencia" class="section emergency">
+        <div class="container emergency-box">
+          <h3>¿Necesitas ayuda inmediata?</h3>
+          <p>
+            Si tú o alguien cercano está en riesgo, comunícate con nuestra línea
+            de emergencia psicosocial disponible 24/7.
+          </p>
+          <a href="tel:+18001234567" class="btn">📞 1-800-123-4567</a>
+        </div>
+      </section>
+
+      <section id="contacto" class="section container">
+        <h3>Contacto</h3>
+        <form id="cita-form" class="form">
+          <label>
+            Nombre completo
+            <input type="text" name="nombre" required />
+          </label>
+          <label>
+            Correo electrónico
+            <input type="email" name="correo" required />
+          </label>
+          <label>
+            Motivo de consulta
+            <textarea name="motivo" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="btn">Enviar solicitud</button>
+          <p id="mensaje" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 CSMC Renacer · Salud mental para todos.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
