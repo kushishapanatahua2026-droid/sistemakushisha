@@ -6,46 +6,8 @@
     <title>Inicio | Centro Vida Plena</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <header class="site-header">
-      <nav class="nav container">
-        <a href="index.html" class="logo-link"><img src="assets/images/logo-centro.svg" alt="Logo del Centro de Salud Vida Plena" /></a>
-        <div class="nav-links">
-          <a class="active" href="index.html">Inicio</a>
-          <a href="sobre-nosotros.html">Sobre nosotros</a>
-          <a href="servicios.html">Servicios</a>
-          <a href="equipo-medico.html">Equipo médico</a>
-          <a href="galeria.html">Galería</a>
-          <a href="contacto.html">Contacto</a>
-        </div>
-      </nav>
-    </header>
-
-    <div class="top-banner">
-      <div class="container banner-grid">
-        <div class="banner-item">Atención de lunes a sábado</div>
-        <div class="banner-item">Citas rápidas por WhatsApp</div>
-        <div class="banner-item">Servicios para toda la familia</div>
-      </div>
-    </div>
-
-    <section class="index-info">
-      <div class="container info-grid">
-        <article class="info-card">
-          <h2>Horarios de atención</h2>
-          <p>Lunes a viernes: 8:00 a.m. a 7:00 p.m.</p>
-          <p>Sábados: 8:00 a.m. a 2:00 p.m.</p>
-        </article>
-        <article class="info-card">
-          <h2>¿Por qué elegirnos?</h2>
-          <p>Atención rápida, personal calificado y seguimiento cercano para cada paciente.</p>
-        </article>
-        <article class="info-card">
-          <h2>Servicios destacados</h2>
-          <p>Medicina general, pediatría, odontología y chequeos preventivos integrales.</p>
-        </article>
-      </div>
-    </section>
+  <body data-page="index">
+    <div id="header-include"></div>
 
     <main class="hero">
       <div class="container hero-layout">
@@ -69,8 +31,43 @@
       </div>
     </main>
 
-    <footer class="footer">
-      <div class="container">© 2026 Centro de Salud Vida Plena</div>
-    </footer>
+    <section class="section container">
+      <h2>Información completa de nuestros 5 menús</h2>
+      <div class="services-grid">
+        <article class="card">
+          <h3>Sobre nosotros</h3>
+          <p>Desde 2012 brindamos atención primaria con enfoque preventivo y trato humano.</p>
+          <p>Misión: cuidar tu salud con servicios oportunos. Visión: ser el centro comunitario referente.</p>
+          <a class="btn secondary" href="sobre-nosotros.html">Ver más</a>
+        </article>
+        <article class="card">
+          <h3>Servicios</h3>
+          <p>Contamos con medicina general, pediatría, odontología y chequeos preventivos.</p>
+          <p>Cada especialidad incluye evaluación, seguimiento y educación para el paciente.</p>
+          <a class="btn secondary" href="servicios.html">Ver más</a>
+        </article>
+        <article class="card">
+          <h3>Equipo médico</h3>
+          <p>Profesionales certificados con experiencia en atención integral familiar y comunitaria.</p>
+          <p>Conoce el perfil de nuestros médicos y su trayectoria clínica.</p>
+          <a class="btn secondary" href="equipo-medico.html">Ver más</a>
+        </article>
+        <article class="card">
+          <h3>Galería</h3>
+          <p>Explora fotos de instalaciones, consultorios, equipamiento y atención diaria.</p>
+          <p>Ambientes limpios, seguros y preparados para brindarte una buena experiencia.</p>
+          <a class="btn secondary" href="galeria.html">Ver más</a>
+        </article>
+        <article class="card">
+          <h3>Contacto</h3>
+          <p>Encuentra dirección, teléfono, correo y mapa del centro para ubicarte rápido.</p>
+          <p>También puedes reservar por WhatsApp o enviar tu solicitud desde el formulario.</p>
+          <a class="btn secondary" href="contacto.html">Ver más</a>
+        </article>
+      </div>
+    </section>
+
+    <div id="footer-include"></div>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -103,31 +103,6 @@ img {
   color: #1a3f88;
 }
 
-.index-info {
-  background: #f6f9ff;
-  border-bottom: 1px solid #dbe7fb;
-}
-
-.info-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.9rem;
-  padding: 1rem 0;
-}
-
-.info-card {
-  background: #ffffff;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  padding: 0.9rem;
-}
-
-.info-card h2 {
-  font-size: 1.1rem;
-  margin-bottom: 0.45rem;
-}
-
 .hero {
   padding: 2.8rem 0;
 }
@@ -250,8 +225,7 @@ select {
   .hero-layout,
   .grid-2,
   .contact-layout,
-  .banner-grid,
-  .info-grid {
+  .banner-grid {
     grid-template-columns: 1fr;
   }
 }
