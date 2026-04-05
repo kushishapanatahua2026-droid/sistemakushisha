@@ -346,3 +346,110 @@ select {
 .history-image img {
   border-radius: 12px;
 }
+
+.cta-interactive {
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-interactive::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+  transform: translateX(-120%);
+  transition: transform 0.45s ease;
+}
+
+.cta-interactive:hover::after {
+  transform: translateX(120%);
+}
+
+.rich-services .service-rich img {
+  height: 170px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 0.65rem;
+}
+
+.service-rich h3 {
+  margin: 0.2rem 0 0.5rem;
+}
+
+.media-card {
+  max-width: 920px;
+  margin-inline: auto;
+}
+
+.video-frame {
+  margin-top: 0.7rem;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 26px rgba(16, 48, 106, 0.2);
+}
+
+.video-frame iframe {
+  width: 100%;
+  min-height: 430px;
+  border: 0;
+}
+
+.facebook-cover {
+  display: block;
+  text-decoration: none;
+  color: #173f87;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #c7d6f4;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  margin-top: 0.7rem;
+}
+
+.facebook-cover img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.facebook-cover span {
+  display: block;
+  padding: 0.8rem 1rem;
+  font-weight: 700;
+  background: #eef4ff;
+}
+
+.facebook-cover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(16, 48, 106, 0.18);
+}
+
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+}
+
+.interest-card {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.24s ease, box-shadow 0.24s ease;
+}
+
+.interest-card img {
+  width: 100%;
+  height: 140px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 0.7rem;
+}
+
+.interest-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 18px 36px rgba(16, 48, 106, 0.2);
+}
+
+@media (max-width: 760px) {
+  .video-frame iframe {
+    min-height: 250px;
+  }
+}
