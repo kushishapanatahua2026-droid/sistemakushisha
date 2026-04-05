@@ -150,6 +150,31 @@ p { line-height: 1.65; }
   padding: 3rem 0;
 }
 
+
+.services-detail {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.section-action {
+  margin-top: 1rem;
+}
+
+.interest-links {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.interest-links li {
+  margin-bottom: 0.55rem;
+}
+
+.interest-links a {
+  color: #12439c;
+  font-weight: 600;
+}
+
 .card,
 .panel,
 .gallery-item {
