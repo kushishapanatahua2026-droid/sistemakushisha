@@ -453,3 +453,63 @@ select {
     min-height: 250px;
   }
 }
+
+.facebook-iframe-wrap {
+  margin-top: 0.7rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 22px rgba(16, 48, 106, 0.18);
+  background: #fff;
+}
+
+.facebook-iframe-wrap iframe {
+  width: 100%;
+  min-height: 540px;
+  border: 0;
+}
+
+.interest-icon-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.9rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 0.2rem;
+}
+
+.icon-link {
+  min-width: 130px;
+  text-decoration: none;
+  color: #123b8a;
+  background: #fff;
+  border: 1px solid #c6d6f4;
+  border-radius: 16px;
+  padding: 0.9rem 0.75rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(16, 48, 106, 0.14);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.icon-link span {
+  display: block;
+  font-size: 1.65rem;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+
+.icon-link small {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.icon-link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 26px rgba(16, 48, 106, 0.2);
+}
+
+@media (max-width: 760px) {
+  .facebook-iframe-wrap iframe {
+    min-height: 430px;
+  }
+}
