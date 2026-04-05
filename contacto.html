@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | Centro Vida Plena</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="index.html" class="logo-link"><img src="logo-centro.svg" alt="Logo del Centro de Salud Vida Plena" /></a>
+        <div class="nav-links">
+          <a href="index.html">Inicio</a>
+          <a href="sobre-nosotros.html">Sobre nosotros</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="equipo-medico.html">Equipo médico</a>
+          <a href="galeria.html">Galería</a>
+          <a class="active" href="contacto.html">Contacto</a>
+        </div>
+      </nav>
+    </header>
+    <div class="top-banner"><div class="container banner-grid"><div class="banner-item">Dirección y mapa</div><div class="banner-item">Formulario de citas</div><div class="banner-item">Atención por WhatsApp</div></div></div>
+
+    <main class="section container">
+      <h2>📍 Contacto</h2>
+      <div class="contact-layout">
+        <article class="panel">
+          <p><strong>Dirección:</strong> Av. Salud 123, Lima, Perú</p>
+          <p><strong>Teléfono:</strong> <a href="tel:+5115550101">+51 1 555 0101</a></p>
+          <p><strong>Correo:</strong> <a href="mailto:citas@centrovidaplena.com">citas@centrovidaplena.com</a></p>
+          <p><a class="btn whatsapp" href="https://wa.me/51999999999?text=Hola,%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener noreferrer">Contactar por WhatsApp</a></p>
+          <p>📅 Escríbenos para agendar tu cita.</p>
+
+          <form id="cita-form" class="form" action="mailto:citas@centrovidaplena.com" method="post" enctype="text/plain">
+            <label>Nombre completo<input type="text" name="nombre" required /></label>
+            <label>Correo electrónico<input type="email" name="correo" required /></label>
+            <label>Especialidad<select name="especialidad" required><option value="">Selecciona</option><option>Medicina general</option><option>Pediatría</option><option>Odontología</option></select></label>
+            <label>Mensaje<textarea name="mensaje" rows="4" required></textarea></label>
+            <button class="btn" type="submit">Enviar solicitud</button>
+            <p id="mensaje-confirmacion" aria-live="polite"></p>
+          </form>
+        </article>
+        <article class="panel">
+          <h3>Mapa del centro</h3>
+          <iframe class="map" title="Mapa del centro" src="https://www.google.com/maps?q=Hospital+Nacional+Dos+de+Mayo,+Lima&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </article>
+      </div>
+    </main>
+
+    <footer class="footer"><div class="container">© 2026 Centro de Salud Vida Plena</div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

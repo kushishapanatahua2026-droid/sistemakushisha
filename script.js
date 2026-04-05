@@ -1,16 +1,18 @@
 const form = document.querySelector('#cita-form');
-const confirmation = document.querySelector('#mensaje-confirmacion');
+const message = document.querySelector('#mensaje-confirmacion');
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
+if (form && message) {
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
 
-  const data = new FormData(form);
-  const name = data.get('nombre');
+    const formData = new FormData(form);
+    const name = formData.get('nombre') || 'Paciente';
 
-  confirmation.textContent = `Gracias, ${name}. Se abrirá tu correo para finalizar el envío de la cita.`;
+    message.textContent = `Gracias, ${name}. Se abrirá tu correo para completar la solicitud.`;
 
-  setTimeout(() => {
-    form.submit();
-    form.reset();
-  }, 400);
-});
+    setTimeout(() => {
+      form.submit();
+      form.reset();
+    }, 350);
+  });
+}
