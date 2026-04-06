@@ -147,7 +147,7 @@ p { line-height: 1.65; }
 .btn.whatsapp:hover { background: #11793a; }
 
 .section {
-  padding: 3rem 0;
+  padding: 1.9rem 0;
 }
 
 
@@ -381,6 +381,14 @@ select {
   margin-inline: auto;
 }
 
+
+.split-media {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
 .video-frame {
   margin-top: 0.7rem;
   border-radius: 14px;
@@ -464,7 +472,7 @@ select {
 
 .facebook-iframe-wrap iframe {
   width: 100%;
-  min-height: 540px;
+  min-height: 460px;
   border: 0;
 }
 
@@ -508,8 +516,14 @@ select {
   box-shadow: 0 14px 26px rgba(16, 48, 106, 0.2);
 }
 
+@media (max-width: 900px) {
+  .split-media {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 760px) {
   .facebook-iframe-wrap iframe {
-    min-height: 430px;
+    min-height: 390px;
   }
 }
