@@ -527,3 +527,38 @@ select {
     min-height: 390px;
   }
 }
+
+.about-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.about-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.55rem;
+}
+
+.about-images img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.mission-block {
+  align-items: stretch;
+}
+
+@media (max-width: 900px) {
+  .about-split {
+    grid-template-columns: 1fr;
+  }
+
+  .about-images {
+    grid-template-columns: repeat(3, minmax(90px, 1fr));
+  }
+}
