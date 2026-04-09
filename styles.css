@@ -80,6 +80,22 @@ img {
   color: #164293;
 }
 
+.nav-links a.menu-login {
+  background: #fbbf24;
+  color: #1f2a44;
+  font-weight: 800;
+  box-shadow: 0 8px 18px rgba(251, 191, 36, 0.35);
+}
+
+.nav-links a.menu-login:hover,
+.nav-links a.menu-login:focus-visible,
+.nav-links a.menu-login.active {
+  background: #f59e0b;
+  color: #111827;
+  transform: translateY(-2px) scale(1.03);
+}
+
+
 .top-banner {
   background: #e8f0ff;
   border-bottom: 1px solid #c4d6f5;
