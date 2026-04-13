@@ -103,7 +103,7 @@ img {
 
 .banner-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.8rem;
   padding: 0.75rem 0;
 }
@@ -265,8 +265,7 @@ select {
 @media (max-width: 920px) {
   .hero-layout,
   .grid-2,
-  .contact-layout,
-  .banner-grid {
+  .contact-layout {
     grid-template-columns: 1fr;
   }
 }
