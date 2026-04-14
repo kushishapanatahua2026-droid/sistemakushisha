@@ -3,8 +3,6 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/includes/layout.php';
-require_once __DIR__ . '/includes/auth.php';
-requireAuth();
 renderHeader('Generar Reporte');
 ?>
 <div class="card mb-4">

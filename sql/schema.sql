@@ -1,17 +1,6 @@
 CREATE DATABASE IF NOT EXISTS sistema_dashboard_salud CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE sistema_dashboard_salud;
 
-CREATE TABLE IF NOT EXISTS admins (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  username VARCHAR(80) NOT NULL UNIQUE,
-  password_hash VARCHAR(255) NOT NULL,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
-INSERT INTO admins (username, password_hash)
-VALUES ('admin', '$2y$10$XCiHzfRm.yK/Al4U9fnbceCF7fSnPv9RydYh0Q6XfQfPo.GvtoBPK')
-ON DUPLICATE KEY UPDATE username = VALUES(username);
-
 CREATE TABLE IF NOT EXISTS atenciones (
   id BIGINT AUTO_INCREMENT PRIMARY KEY,
   Id_Cita VARCHAR(50), Anio VARCHAR(10), Mes VARCHAR(10), Dia VARCHAR(10), Fecha_Atencion VARCHAR(30),

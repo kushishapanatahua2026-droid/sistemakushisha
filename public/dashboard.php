@@ -3,8 +3,6 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/includes/layout.php';
-require_once __DIR__ . '/includes/auth.php';
-requireAuth();
 renderHeader('Dashboard');
 ?>
 <div class="row g-3 mb-4" id="kpiCards">

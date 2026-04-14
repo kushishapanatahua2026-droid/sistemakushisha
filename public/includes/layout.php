@@ -3,11 +3,9 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/../../config/config.php';
-require_once __DIR__ . '/auth.php';
 
 function renderHeader(string $title): void
 {
-    $user = authUser();
     ?>
 <!doctype html>
 <html lang="es">
@@ -28,15 +26,11 @@ function renderHeader(string $title): void
             <a class="nav-link text-white" href="dashboard.php">Dashboard</a>
             <a class="nav-link text-white" href="upload.php">Cargar Excel</a>
             <a class="nav-link text-white" href="reportes.php">Generar Reporte</a>
-            <a class="nav-link text-warning" href="logout.php">Salir</a>
         </nav>
     </aside>
     <main class="flex-grow-1">
         <nav class="navbar navbar-expand-lg bg-white border-bottom px-3">
             <span class="navbar-brand mb-0 h1"><?= APP_NAME ?></span>
-            <div class="ms-auto text-muted small">
-                <?= $user ? 'Usuario: ' . htmlspecialchars($user['username']) : '' ?>
-            </div>
         </nav>
         <section class="container-fluid py-4">
     <?php

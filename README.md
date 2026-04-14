@@ -25,19 +25,15 @@ Sistema web en **PHP 8 + MySQL + Bootstrap 5** para importar Excel (74 campos) y
    ```
 6. Acceder a `http://localhost:8000`.
 
-## Credenciales iniciales
-- Usuario: `admin`
-- Clave: `admin123`
-
 ## Estructura
 - `public/`: rutas web y assets.
 - `public/api/`: endpoints JSON para tablas/gráficos.
 - `src/`: clases de negocio (`ExcelImporter`).
-- `sql/schema.sql`: script de creación de base de datos y tablas.
+- `sql/schema.sql`: script de creación de base de datos y tabla principal.
 - `uploads/`: almacenamiento de archivos importados.
 
 ## Funcionalidades
-- Login, logout y protección por sesión.
+- Dashboard con acceso directo (sin login).
 - Carga de Excel (.xlsx, .xls, .xlsm).
 - Importación a MySQL con los 74 campos.
 - Tabla dinámica DataTables con exportación Excel/PDF/CSV.
