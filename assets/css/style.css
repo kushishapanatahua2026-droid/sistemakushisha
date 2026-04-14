@@ -1,0 +1,13 @@
+body { background: #f5f7fb; }
+.wrapper { min-height: 100vh; }
+.sidebar { width: 250px; min-height: 100vh; }
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover { background: rgba(255,255,255,.15); border-radius: .5rem; }
+.content { min-width: 0; }
+.card { border: 0; }
+.small-table { max-height: 240px; overflow-y: auto; }
+canvas { max-height: 260px; }
+@media (max-width: 991px) {
+  .sidebar { width: 100px; }
+  .sidebar h5 { font-size: .9rem; }
+}
