@@ -1,0 +1,16 @@
+{
+  "name": "sistemakushisha/dashboard-salud",
+  "description": "Sistema web para importar Excel y generar dashboards dinámicos",
+  "type": "project",
+  "require": {
+    "php": ">=8.1",
+    "ext-pdo": "*",
+    "ext-json": "*",
+    "phpoffice/phpspreadsheet": "^2.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  }
+}
